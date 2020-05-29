@@ -1,2 +1,86 @@
 @use './global';
 
+body{
+    margin: 0;
+    background-color: transparent;
+    z-index: 99;
+   
+    .button-slant{
+        position: absolute;
+        top: 0;
+        right: 20%;
+        height: 60px;
+        width: 113px;
+        background-color: #828282;
+        color: #fff;
+        cursor: pointer;
+        z-index: 99;
+        
+
+
+
+        &:after{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            content: '';
+            background: inherit;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transform-origin: top left;
+            transform: skewY(12deg);
+            -webkit-box-shadow: 3px 3px 5px -2px #D52027;
+                -moz-box-shadow: 3px 3px 5px -2px #D52027;
+                box-shadow:      3px 3px 5px -2px #D52027;
+            
+
+                        
+        }
+
+       .button-text-wrap{
+           width: 100%;
+           height: 100px;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           background: transparent;
+        p{
+            font-size: 0.4em;
+            margin: 0;
+            font-weight: 900;
+            text-align: center;
+            z-index: 99;
+           
+        }
+        .button-explore{
+            z-index: 99;
+            font-size: 0.4em;
+           margin: 1em;
+            text-align: right;
+
+        }
+       }
+
+
+        
+    }
+    
+   
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+ { 
+
+    .button-slant{
+        width: 95px;
+        
+        .button-text-wrap{
+             font-size: 1.6em;
+        }
+    }
+
+}
