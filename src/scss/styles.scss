@@ -10,7 +10,7 @@ body{
         top: 0;
         right: 20%;
         height: 60px;
-        width: 113px;
+        width: 110px;
         background-color: #828282;
         color: #fff;
         cursor: pointer;
@@ -45,20 +45,31 @@ body{
            display: flex;
            flex-direction: column;
            justify-content: center;
+           align-content: center;
            background: transparent;
-        p{
+           padding-top: 0.5em;
+           padding-bottom: 1.5em;
+        .text{
+        
             font-size: 0.4em;
-            margin: 0;
+            width: 100%;
+            margin: 0.5em 0;
             font-weight: 900;
             text-align: center;
             z-index: 99;
+            padding: 0 2em;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            top: 0;
            
         }
         .button-explore{
+            position: relative;
             z-index: 99;
             font-size: 0.4em;
-           margin: 1em;
+            margin: 0.5em 1em;
             text-align: right;
+            bottom: 5px;
 
         }
        }
@@ -70,17 +81,20 @@ body{
    
 }
 
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
- { 
+// @media only screen and (min-device-width: 375px) and (max-device-width: 812px) { 
+//     body{
 
-    .button-slant{
-        width: 95px;
+//     .button-slant{
+//         height: 70px;
+//         width: 10px !important;
         
-        .button-text-wrap{
-             font-size: 1.6em;
-        }
-    }
+//         .button-text-wrap{
+//             //  font-size: 1.6em;
+//            .text{
+//                width: 10%;
+//            }
+//         }
+//     }
+//     }
 
-}
+// }
